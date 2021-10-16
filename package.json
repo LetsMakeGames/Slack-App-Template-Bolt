@@ -1,7 +1,7 @@
 {
   "name": "slack-app-template-bolt",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a basic template for building Slack Apps with Bolt in Node.  You can use this as a starting point for building your node based Slack Apps using Slack's new Bolt framework.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,14 @@
     "@slack/bolt": "^3.7.0",
     "dotenv": "^10.0.0",
     "postman-request": "^2.88.1-postman.30"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbarnes1989/Slack-App-Template-Bolt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wbarnes1989/Slack-App-Template-Bolt/issues"
+  },
+  "homepage": "https://github.com/wbarnes1989/Slack-App-Template-Bolt#readme"
 }
