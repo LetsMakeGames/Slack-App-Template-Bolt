@@ -9,39 +9,39 @@ const app = new App({
   });
 
 /* Enter your code logic here. Get started with Bolt: https://slack.dev/bolt-js/tutorial/getting-started-http */
-app.command('/lovebot', async ({ command, ack, respond, client }) => {
-  await ack();
+// app.command('/lovebot', async ({ command, ack, respond, client }) => {
+//   await ack();
   
-  try {
-    const res = await client.chat.postMessage({
-      channel: 'C02FPA9CT8B',
-      username: 'LoveBot',
-      icon_emoji: ':heart:',
-      text: "",
-      blocks: [
-        {
-          "type": "actions",
-          "elements": [
-            {
-              "type": "button",
-              "text": {
-                "type": "plain_text",
-                "text": "Click Me",
-                "emoji": true
-              },
-              "value": "love button clicked",
-              "action_id": "love-button"
-            }
-          ]
-        }
-      ]
-    })
-  }
+//   try {
+//     const res = await client.chat.postMessage({
+//       channel: 'C02FPA9CT8B',
+//       username: 'LoveBot',
+//       icon_emoji: ':heart:',
+//       text: "",
+//       blocks: [
+//         {
+//           "type": "actions",
+//           "elements": [
+//             {
+//               "type": "button",
+//               "text": {
+//                 "type": "plain_text",
+//                 "text": "Click Me",
+//                 "emoji": true
+//               },
+//               "value": "love button clicked",
+//               "action_id": "love-button"
+//             }
+//           ]
+//         }
+//       ]
+//     })
+//   }
 
-  catch (error) {
-    console.log(error)
-  }
-});
+//   catch (error) {
+//     console.log(error)
+//   }
+// });
 
 (async () => {
   // Start your app
