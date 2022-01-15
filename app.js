@@ -15,8 +15,9 @@ app.command('/lovebot', async ({ command, ack, respond, client }) => {
   try {
     const res = await client.chat.postMessage({
       channel: 'C02FPA9CT8B',
-      username: 'LoveBot :heart:',
+      username: 'LoveBot',
       icon_emoji: ':heart:',
+      text: "",
       blocks: [
         {
           "type": "actions",
