@@ -30,7 +30,7 @@ app.command('/lovebot', async ({ command, ack, respond }) => {
       }
     ]
   });
-})
+});
 
 (async () => {
   // Start your app
