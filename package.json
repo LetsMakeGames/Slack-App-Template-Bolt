@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/wbarnes1989/Slack-App-Template-Bolt#readme",
   "engines": {
-    "node": "16.13.2"
+    "node": "16.x"
   }
 }
