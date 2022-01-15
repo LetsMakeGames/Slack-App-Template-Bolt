@@ -8,10 +8,11 @@ const app = new App({
     signingSecret: process.env.SLACK_SIGNING_SECRET
   });
 
+  const port = process.env.PORT || 3000;
+
 /* Enter your code logic here. Get started with Bolt: https://slack.dev/bolt-js/tutorial/getting-started-http */
 // app.command('/lovebot', async ({ command, ack, respond, client }) => {
 //   await ack();
-  
 //   try {
 //     const res = await client.chat.postMessage({
 //       channel: 'C02FPA9CT8B',
@@ -45,7 +46,7 @@ const app = new App({
 
 (async () => {
   // Start your app
-  await app.start(process.env.PORT || 3000);
+  await app.start(port);
   
   console.log('⚡️ Bolt app is running!');
 })();
