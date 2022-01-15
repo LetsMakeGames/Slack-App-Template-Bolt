@@ -40,10 +40,6 @@ app.command('/lovebot', async ({ command, ack, respond, client }) => {
   catch (error) {
     console.log(error)
   }
-
-  await respond({
-    
-  });
 });
 
 (async () => {
